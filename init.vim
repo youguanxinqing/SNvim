@@ -40,3 +40,5 @@ inoremap jj <Esc>
 nnoremap <C-A> :Files<CR> 
 nnoremap <C-H> :Rg<CR> 
 
+" last pos
+au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
