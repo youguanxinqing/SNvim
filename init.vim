@@ -37,6 +37,8 @@ syntax enable
 colorscheme gruvbox8
 
 inoremap jj <Esc>
+inoremap <c-n> gt
+inoremap <c-m> gT
 nnoremap <C-A> :Files<CR> 
 nnoremap <C-H> :Rg<CR> 
 
